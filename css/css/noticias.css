@@ -7,8 +7,8 @@
 
 /* Colores del Atlético Bucaramanga */
 :root {
-    --color-primary: #9e1b32; /* Rojo primario */
-    --color-secondary: #ffe200; /* Amarillo secundario */
+    --color-primary: #FCEE3F; /* Amarillo primario */
+    --color-secondary: #31601E; /* Verde secundario */
     --color-bg: #f0f0f0; /* Color de fondo */
     --color-text: #333; /* Color de texto principal */
 }
@@ -58,38 +58,47 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     font-weight: bold;
     font-size: 1.2rem;
     transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 section {
-    background-color: #fff;
-    padding: 40px 20px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg);
+    padding: 40px 0;
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: var(--color-primary);
+    color: var(--color-primary); /* Utilizando el color primario para el título */
 }
 
-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+.noticia {
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-secondary); /* Línea divisoria entre noticias */
+    padding-bottom: 20px;
+}
+
+.noticia h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    font-size: 1rem;
+    color: var(--color-text);
 }
 
 footer {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
     text-align: center;
     padding: 10px 0;
     position: absolute;
@@ -99,4 +108,13 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+}
+
+.image-container {
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.image-container img {
+    display: block; /* Hace que la imagen sea un bloque para poder aplicar márgenes automáticos */
+    margin: 0 auto; /* Margen automático a izquierda y derecha para centrar la imagen */
 }

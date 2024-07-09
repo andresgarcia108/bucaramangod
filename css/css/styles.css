@@ -1,19 +1,16 @@
-/* Reset de estilos básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Colores del Atlético Bucaramanga */
 :root {
-    --color-primary: #FCEE3F; /* Amarillo primario */
-    --color-secondary: #31601E; /* Verde secundario */
+    --color-primary: #FCEE3F; 
+    --color-secondary: #31601E;
     --color-bg: #f0f0f0; /* Color de fondo */
     --color-text: #333; /* Color de texto principal */
 }
 
-/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--color-bg);
@@ -36,7 +33,7 @@ header {
 }
 
 header img {
-    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 100px; 
     height: auto;
 }
 
@@ -65,35 +62,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 section {
-    background-color: var(--color-bg);
-    padding: 40px 0;
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: var(--color-primary); /* Utilizando el color primario para el título */
+    color: var(--color-primar);
 }
 
-.noticia {
-    margin-bottom: 30px;
-    border-bottom: 1px solid var(--color-secondary); /* Línea divisoria entre noticias */
-    padding-bottom: 20px;
-}
-
-.noticia h3 {
-    font-size: 1.8rem;
-    color: var(--color-primary);
-    margin-bottom: 10px;
-}
-
-.noticia p {
-    font-size: 1rem;
-    color: var(--color-text);
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
 footer {
